@@ -1,0 +1,42 @@
+.note-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 1.125rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.note-card:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
+.note-content {
+  margin: 0;
+  color: var(--text);
+  word-break: break-word;
+  flex: 1;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.delete-btn {
+  border: 1px solid var(--text-muted);
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-sm);
+  background-color: #f7d3d1;
+  transition: all 0.2s;
+  position: absolute;
+  right: -9px;
+  top: -9px;
+}
+
+.delete-btn:hover {
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
