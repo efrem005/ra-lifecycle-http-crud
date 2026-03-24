@@ -25,11 +25,12 @@
 }
 
 .delete-btn {
-  border: 1px solid var(--text-muted);
   cursor: pointer;
   padding: 0.3rem 0.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--danger);
   border-radius: var(--radius-sm);
-  background-color: #f7d3d1;
   transition: all 0.2s;
   position: absolute;
   right: -9px;
@@ -37,6 +38,5 @@
 }
 
 .delete-btn:hover {
-  color: var(--danger);
-  border: 1px solid var(--danger);
+  border-color: var(--danger);
 }
