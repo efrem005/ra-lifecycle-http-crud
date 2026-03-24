@@ -3,7 +3,7 @@ import NotesForm from './components/NotesForm/NotesForm'
 import NotesList from './components/NotesList/NotesList'
 import type { Note } from './types/note'
 
-const API_URL = "/api"
+const API_URL = import.meta.env.VITE_API_URL
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([])
